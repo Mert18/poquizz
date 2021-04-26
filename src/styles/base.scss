@@ -1,0 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+
+$raisin-black: #1c1d21;
+$verdigris: #48A9A6;
+$timberwolf: #E4DFDA;
+$fuzzywuzzy: #C1666B;
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'Mukta', sans-serif;
+    background-color: $timberwolf;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
