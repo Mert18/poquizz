@@ -1,10 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
 
-$raisin-black: #1c1d21;
-$verdigris: #48A9A6;
-$timberwolf: #E4DFDA;
-$fuzzywuzzy: #C1666B;
+$salmon-pink: #F49097;
+$mauve: #DFB2F4;
+$corn: #F5E960;
+$ghost-white: #F2F5FF;
+$turqoise: #55D6C2;
+
 
 
 *,
@@ -22,7 +24,7 @@ $fuzzywuzzy: #C1666B;
 body {
     font-size: 62.5%;
     font-family: 'Mukta', sans-serif;
-    background-color: $timberwolf;
+    background-color: $mauve;
 }
 
 .container {
@@ -30,4 +32,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.name {
+    color: $salmon-pink;
 }

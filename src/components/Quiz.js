@@ -5,16 +5,16 @@ import React from 'react';
 
 
 
-const Quiz = ({handleAnswer, data: {question, incorrect_answers, correct_answer}}, index) => {
-
+const Quiz = ({handleAnswer, data: {question, incorrect_answers, correct_answer}, index}) => {
 
     const shuffledAnswers = [correct_answer, ...incorrect_answers].sort(() => Math.random - 0.5);
 
     return(
-        <div>
-            <h2 dangerouslySetInnerHTML={{__html: question}} />
-
-            <div>
+        <div className="quiz">
+            <div className="quiz__question">
+                <h2 dangerouslySetInnerHTML={{__html: question}} />
+            </div>
+            <div className="quiz__options">
                 {shuffledAnswers.map((answer, index) => (
                     <button
                         key={index}
@@ -22,6 +22,8 @@ const Quiz = ({handleAnswer, data: {question, incorrect_answers, correct_answer}
                         dangerouslySetInnerHTML={{__html: answer}} />
                 ))}
             </div>
-        </div>)
+        </div>
+        
+        )
 }
 export default Quiz

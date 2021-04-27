@@ -1,0 +1,38 @@
+.menu {
+    background-color: $mauve;
+    color: $ghost-white;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+    border-bottom-right-radius: 4rem;
+    margin-top: 5rem;
+    -webkit-box-shadow: 10px 6px 35px -18px rgba(0,0,0,0.65);
+-moz-box-shadow: 10px 6px 35px -18px rgba(0,0,0,0.65);
+box-shadow: 10px 6px 35px -18px rgba(0,0,0,0.65);
+    &__hero {
+        padding: 2rem;
+    }
+
+    &__buttons {
+        button {
+            background: transparent;
+            border: none;
+            outline: none;
+            background-color: $salmon-pink;
+            color: $ghost-white;
+            width: 30%;
+            height: 3rem;
+            font-size: 1.2rem;
+            transition: all .2s;
+
+
+            &:hover {
+                background-color: $turqoise;
+                color: $ghost-white;
+                transition: all .2s;
+                cursor: pointer;
+            }
+        }
+
+    }
+}

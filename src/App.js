@@ -28,20 +28,22 @@ const App = () => {
     }, [])
 
     const handleAnswer = () => {
-        setCurrentIndex(currentIndex + 1);
+        const newIndex = currentIndex + 1;
+        setCurrentIndex(newIndex);
 
-        if(currentIndex > 9 ) {
+        if (newIndex < questions.length) {
+            setCurrentIndex(newIndex);
+        } else {
             setGameState("endscreen");
         }
     }
 
     return(
         <div className="container">
-            <h1>Welcome to Poquizz.</h1>
             <QuizContext.Provider value={{gameState, setGameState}}>
                 {gameState === "menu" && <MainMenu />}
 
-                {gameState === "quiz" && currentIndex < 10 &&
+                {gameState === "quiz" &&
 
                 <Quiz 
                     data={questions[currentIndex]} 
