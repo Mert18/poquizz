@@ -17,6 +17,9 @@ const App = () => {
 
     const [questions, setQuestions] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
+
+    const [score, setScore] = useState(0);
+    const [showAnswers, setShowAnswers] = useState(false);
     
 
     useEffect(() => {
@@ -27,14 +30,22 @@ const App = () => {
         })
     }, [])
 
-    const handleAnswer = () => {
-        const newIndex = currentIndex + 1;
-        setCurrentIndex(newIndex);
+    const handleAnswer = (answer) => {
 
-        if (newIndex < questions.length) {
-            setCurrentIndex(newIndex);
-        } else {
+        if(answer === questions[currentIndex].correct_answer) {
+            setScore(score + 1);
+        }
+        setShowAnswers(true);
+    }
+
+    const handleNextQuestion = () => {
+
+        const newIndex = currentIndex + 1;
+        if(newIndex > 9) {
             setGameState("endscreen");
+        }else {
+            setShowAnswers(false);
+            setCurrentIndex(newIndex); 
         }
     }
 
@@ -49,11 +60,13 @@ const App = () => {
                     data={questions[currentIndex]} 
                     handleAnswer={handleAnswer}
                     index={currentIndex}
+                    showAnswers={showAnswers}
+                    handleNextQuestion={handleNextQuestion}
                 />
                 
                 }
 
-                {gameState === "endscreen" && <EndScreen />}
+                {gameState === "endscreen" && <EndScreen score = {score} />}
             </QuizContext.Provider>
            
         </div>

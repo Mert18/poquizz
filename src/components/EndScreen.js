@@ -1,9 +1,9 @@
 import React from 'react'
 
-const EndScreen = () => {
+const EndScreen = ({score}) => {
     return (
         <div>
-            welcome to endscreen
+            <h2>Your score was {score}</h2>
         </div>
     )
 }
