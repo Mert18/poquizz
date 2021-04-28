@@ -31,7 +31,6 @@ const App = () => {
     }, [])
 
     const handleAnswer = (answer) => {
-
         if(answer === questions[currentIndex].correct_answer) {
             setScore(score + 1);
         }

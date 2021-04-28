@@ -2,9 +2,6 @@ import React from 'react';
 
 //import questions here (trivia api is a good choice.)
 
-
-
-
 const Quiz = ({handleAnswer, data: {question, incorrect_answers, correct_answer}, showAnswers, handleNextQuestion}) => {
 
     function shuffle(array) {
@@ -26,7 +23,7 @@ const Quiz = ({handleAnswer, data: {question, incorrect_answers, correct_answer}
         return array;
       }
 
-    const shuffledAnswers = shuffle([correct_answer, ...incorrect_answers]);
+      const shuffledAnswers = shuffle([correct_answer, ...incorrect_answers]);
 
     return(
         <div className="quiz">

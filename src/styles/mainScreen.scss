@@ -1,14 +1,13 @@
 .menu {
-    background-color: $mauve;
+    background-color: $red-1;
     color: $ghost-white;
     padding: 2rem;
     text-align: center;
     font-size: 1.3rem;
-    border-bottom-right-radius: 4rem;
     margin-top: 5rem;
     -webkit-box-shadow: 10px 6px 35px -18px rgba(0,0,0,0.65);
--moz-box-shadow: 10px 6px 35px -18px rgba(0,0,0,0.65);
-box-shadow: 10px 6px 35px -18px rgba(0,0,0,0.65);
+    -moz-box-shadow: 10px 6px 35px -18px rgba(0,0,0,0.65);
+    box-shadow: 10px 6px 35px -18px rgba(0,0,0,0.65);
     &__hero {
         padding: 2rem;
     }
@@ -18,16 +17,15 @@ box-shadow: 10px 6px 35px -18px rgba(0,0,0,0.65);
             background: transparent;
             border: none;
             outline: none;
-            background-color: $salmon-pink;
-            color: $ghost-white;
-            width: 30%;
+            background-color: $ghost-white;
+            color: $red-1;
+            width: 40%;
             height: 3rem;
             font-size: 1.2rem;
             transition: all .2s;
-
-
+            font-weight: 600;
             &:hover {
-                background-color: $turqoise;
+                background-color: $red-2;
                 color: $ghost-white;
                 transition: all .2s;
                 cursor: pointer;

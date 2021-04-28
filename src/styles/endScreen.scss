@@ -1,0 +1,24 @@
+
+.end{
+    background-color: $red-1;
+    color: $ghost-white;
+    padding: 1rem;
+    margin-top: 10rem;
+    width: 50%;
+    text-align: center;
+    font-size: 1.3rem;
+    &__score {
+        padding: 2rem;
+    }
+
+    &__again {
+        a {
+            text-decoration: none;
+            color: $ghost-white;
+
+            &:hover{
+                color: $red-2;
+            }
+        }
+    }
+}

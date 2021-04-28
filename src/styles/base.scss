@@ -4,8 +4,18 @@
 $salmon-pink: #F49097;
 $mauve: #DFB2F4;
 $corn: #F5E960;
-$ghost-white: #F2F5FF;
 $turqoise: #55D6C2;
+
+$ghost-white: #F2F5FF;
+$white-2: #EEE4E1;
+
+
+$yellow-1: #d4e09b;
+$yellow-2: #cbdfbd;
+$yellow-3: #f6f4d2;
+
+$red-1: #a44a3f;
+$red-2: #f19c79;
 
 
 
@@ -24,7 +34,7 @@ $turqoise: #55D6C2;
 body {
     font-size: 62.5%;
     font-family: 'Mukta', sans-serif;
-    background-color: $mauve;
+    background-color: $yellow-2;
 }
 
 .container {
@@ -34,5 +44,5 @@ body {
     align-items: center;
 }
 .name {
-    color: $salmon-pink;
+    color: $red-2;
 }

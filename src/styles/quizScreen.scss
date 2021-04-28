@@ -7,7 +7,8 @@
 
 
     padding: 3rem;
-    background-color: $salmon-pink;
+    background-color: $red-1;
+    color: $ghost-white;
     margin-top: 5rem;
     font-size: 1.2rem;
     width: 70%;
@@ -29,12 +30,12 @@
             margin: .3rem;
             border: none;
             outline: none;
-            background-color: $corn;
+            background-color: $red-2;
             font-weight: 600;
             transition: all .2s;
 
             &:hover {
-                background-color: $turqoise;
+                background-color: $white-2;
                 cursor: pointer;
                 transition: all .2s;
             }
@@ -44,9 +45,10 @@
 
 .correct {
     color: green;
+    font-size: 1.3rem;
 }
 .false {
-    color: red;
+    color: $red-1;
 }
 .normal {
     color: black;
@@ -56,14 +58,14 @@
     position: absolute;
     bottom: -50px;
     right: 0;
-    background-color: $corn;
+    background-color: $red-1;
     border: none;
     outline: none;
     padding: .7rem;
-    color: black;
+    color: $ghost-white;
     font-size: 1.2rem;
     &:hover {
         cursor: pointer;
-        background-color: yellow;
+        background-color: $red-2;
     }
 }
